@@ -1,0 +1,1 @@
+Hier kommt die Lösung des Arbeitsblatts AB_Inheritance rein.
