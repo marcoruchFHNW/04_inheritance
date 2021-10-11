@@ -14,9 +14,11 @@ public class WindowExample {
         window.setColor(0, 255, 0);
         window.setBold(true);
         window.setFontSize(40);
-        window.drawStringCentered("Window Example", 400, 50);
+        window.drawStringCentered("Crazy Cool Pong", 400, 50);
 
         window.open();
+
+        new PongGame(200, 200);
         window.waitUntilClosed();
     }
 }
