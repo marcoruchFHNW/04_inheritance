@@ -20,8 +20,8 @@ public class PongGame {
         this.height = height;
 
         ball = new Ball(200, 200, 5, 5);
-        playerLeft = new Player(10, PongGui.HEIGHT / 2 + 30, 75, 10);
-        playerRight = new Player(PongGui.WIDTH - 20, PongGui.HEIGHT / 2 + 30, 75, 10);
+        playerLeft = new Player(10, height / 2 + 30, 75, 10);
+        playerRight = new Player(width - 20, height / 2 + 30, 75, 10);
 
         createWalls();
     }
@@ -80,9 +80,9 @@ public class PongGame {
     }
 
     public void createWalls() {
-        north = new GameObject(0, 0, 5, PongGui.WIDTH);
-        east = new GameObject(PongGui.WIDTH - 5, 0, PongGui.HEIGHT - 5, 5);
-        south = new GameObject(0, PongGui.HEIGHT - 5, 5, PongGui.WIDTH -5);
-        west = new GameObject(0, 0, PongGui.HEIGHT, 5);
+        north = new GameObject(0, 0, 5, width);
+        east = new GameObject(width - 5, 0, height - 5, 5);
+        south = new GameObject(0, height - 5, 5, width -5);
+        west = new GameObject(0, 0, height, 5);
     }
 }
